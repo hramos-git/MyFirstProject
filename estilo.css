@@ -1,0 +1,154 @@
+@font-face {
+  font-family: sunshine;
+  src: url("fuente/Sunshine.ttf");
+}
+@font-face {
+  font-family: ra_bali;
+  src: url("fuente/ra_bali.otf");
+}
+/*
+Esto es un comentario
+*/
+/*
+selector{
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor;
+    .....
+}
+*/
+
+/* /////////ESTILOS GENERALES*/
+p{
+    color: rgb(2, 0, 0);
+}
+h1,h2,h3,h4,h5,p,ul,li{
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+}
+/*
+    palabra suelta -> etiqueta
+    numeral -> id
+    punto -> clase
+*/
+header,main,footer{
+    width: 800px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+body{
+    background: rgb(112, 112, 112);
+    font-family: sans-serif;
+}
+/* /////////ESTILOS GENERALES*/
+
+/* /////////ESTILOS CABECERA*/
+#imagenlogo{
+    float: left;
+    margin-right: 20px;
+}
+h1{
+    font-family: sunshine;
+    font-size: 50px;
+}
+h2{
+    font-family: ra_bali;
+    font-size: 30px;
+}
+/* /////////ESTILOS CABECERA*/
+
+/* /////////AQUI TRABAJAMOS EL MENÚ*/
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+nav ul{
+    padding: 0px;
+    margin: 0px;
+}
+nav ul li{
+    padding: 5px;
+    margin: 1px;
+    list-style-type: none;
+    float: left;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    width: 70px;
+    font-size: 10px;
+    text-align: center;
+    transition: all 1s;
+}
+.clearfix{
+    clear: both;
+}
+nav ul li:first-child{
+    border-radius: 15px 0px 0px 15px;
+}
+nav ul li:last-child{
+    border-radius: 0px 15px 15px 0px;
+}
+nav ul li:hover{
+    background: white;
+    color: black;
+}
+/* /////////AQUI TRABAJAMOS EL MENÚ*/
+
+/* /////////AQUI TRABAJAMOS EL CARRUSEL*/
+#carousel #contenedorcarrusel .diapositiva img{
+    width: 100%;
+}
+#carousel #contenedorcarrusel .diapositiva{
+    width: 800px;
+    height: 420px;
+    float: left;
+}
+#mascara{
+    width: 4200px;
+    height: 420px;
+    animation: mueve 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes mueve{
+    0%{left:0px;}
+    20%{left:0px;}
+    25%{left:-800px;}
+    45%{left:-800px;}
+    50%{left:-1600px;}
+    70%{left:-1600px;}
+    75%{left:-2400px;}
+    95%{left:-2400px;}
+    100%{left:-3200px;}
+}
+/* /////////AQUI TRABAJAMOS EL CARRUSEL*/
+
+/* /////////BLOG EN LA PÁGINA PRINCIPAL*/
+#blogs article{
+    width: 25%;
+    float: left;
+}
+#blogs article img{
+    width: 100%;
+}
+#blogs article .contienearticulo{
+    padding: 10px;
+}
+/* /////////BLOG EN LA PÁGINA PRINCIPA*/
+
+/* /////////DESTACADOS DE LA PÁGINA PRINCIPAL*/
+#highlights article{
+    width: 50%;
+    float: left;
+}
+#highlights article img{
+    width: 100%;
+}
+#highlights article .contienearticulo{
+    padding: 10px;
+}
+/* /////////DESTACADOS DE LA PÁGINA PRINCIPAL*/
